@@ -1,13 +1,13 @@
 [features]
 seeds = false
-[programs.localnet]
-my_epic_project = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+[programs.devnet]
+my_epic_project = "49nDNU9kGM21q3WWjdm7ZTD7FBMfVWZAByRKMnp8micZ"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/Users/zhangxiangyu/.config/solana/id.json"
 
 [scripts]

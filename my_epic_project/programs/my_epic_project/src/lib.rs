@@ -2,7 +2,8 @@ use anchor_lang::prelude::*;
 // 导入Anchor所提供的一些工具包
 
 // declare_id主要用于向Solana提供如何运行我们所编写的程序，这块内容将会由Anchor为我们自动生成。
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+// declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("49nDNU9kGM21q3WWjdm7ZTD7FBMfVWZAByRKMnp8micZ");
 
 // 宏
 #[program]
@@ -20,9 +21,7 @@ pub mod myepicproject {  // 定义了一个名为myepicproject的模块
 
     pub fn add_gif(ctx: Context<AddGif>, gif_link: String) -> Result <()> {
         let base_account = &mut ctx.accounts.base_account;
-
         let user = &mut ctx.accounts.user;
-
         let item = ItemStruct{
             gif_link: gif_link.to_string(),
             user_address: *user.to_account_info().key,

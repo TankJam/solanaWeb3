@@ -250,5 +250,10 @@ cd my_epic_project
 
 ## 四 部署+连接Solana程序到Web应用程序
 ### 1、将程序部署到devnet
+  - solana config set --url devnet
+  - solana config get
+  - solana airdrop 2
+  - solana balance
+
 ### 2、从Web应用程序调用部署的程序
 ### 3、向Solana程序提交GIF
